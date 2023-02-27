@@ -31,8 +31,20 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?php echo e(url("/about")); ?>">about</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?php echo e(url("/catalog")); ?>">catalog</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?php echo e(url("/howtofindus")); ?>">howtofindus</a>
+                        </li>
 
                     </ul>
+
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
