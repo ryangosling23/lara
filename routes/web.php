@@ -28,4 +28,8 @@ Route::get('/howtofindus', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
 Route::get('/catalog', [App\Http\Controllers\producty::class, 'pruduct']);
+
+Route::get('/catalog/filter/{id}', [product::class, 'filter']);
+Route::get('/catalog/sort/{name}/sort', [product::class, 'pruduct']);

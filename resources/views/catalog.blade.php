@@ -10,11 +10,11 @@
 
     </div>
 
-    <div class="dropdown">
+    <div class="dropdown mb-5">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
           Список
         </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
           <li><a class="dropdown-item" href="#">Игры</a></li>
           <li><a class="dropdown-item" href="#">Консоли</a></li>
           <li><a class="dropdown-item" href="#">Аксесуары</a></li>
@@ -29,7 +29,7 @@
                     <img class="card-img-top h-100" src="{{$obprod->img}}" src="..." alt="cardimg">
                     <div class="card-body">
                         <h5 class="card-title">{{$obprod->name}}</h5>
-                    <p class="card-text">Цена:{{$obprod->price}}руб</p>
+                    <p class="card-text">Цена: {{$obprod->price}}руб</p>
                     <a href="#" class="btn btn-primary">Купить</a>
                     </div>
                 </div>
