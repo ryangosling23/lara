@@ -18,5 +18,6 @@ class producty extends Controller
         return view('catalog', ['prod' =>$prod,'cat'=>$cat]);
     }
 
+    
 
 }

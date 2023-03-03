@@ -33,3 +33,4 @@ Route::get('/catalog', [App\Http\Controllers\producty::class, 'pruduct']);
 
 Route::get('/catalog/filter/{id}', [product::class, 'filter']);
 Route::get('/catalog/sort/{name}/sort', [product::class, 'pruduct']);
+Route::get('/about', [App\Http\Controllers\about::class, 'slider']);
