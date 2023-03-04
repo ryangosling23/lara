@@ -6,10 +6,10 @@ use Illuminate\Http\Request;
 
 class producty extends Controller
 {
-    public function pruduct($name='id', $sort='desc'){
+    public function product($name='id', $sort='desc'){
         $prod=\App\Models\product::orderby($name, $sort)->get();
         $cat=\App\Models\category::all();
-        return view('catalog',['prod'=>$prod]);
+        return view('catalog',['prod' =>$prod,'cat'=>$cat]);
     }
 
     public function filter($id){
@@ -17,7 +17,4 @@ class producty extends Controller
         $cat=\App\Models\category::all();
         return view('catalog', ['prod' =>$prod,'cat'=>$cat]);
     }
-
-    
-
 }
