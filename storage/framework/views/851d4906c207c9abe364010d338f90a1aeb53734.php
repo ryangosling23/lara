@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
 
-    <title><?php echo e(config('app.name', 'Laravel')); ?></title>
+    <title><?php echo e(config('True games', 'True games')); ?></title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -15,13 +15,15 @@
 
     <!-- Scripts -->
     <?php echo app('Illuminate\Foundation\Vite')(['resources/sass/app.scss', 'resources/js/app.js']); ?>
+    <!-- CSS -->
+<link rel="stylesheet" href="/resources/css/style.css">
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="<?php echo e(url('/')); ?>">
-                    <?php echo e(config('app.name', 'Laravel')); ?>
+                    <?php echo e(config('True games', 'True games')); ?>
 
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="<?php echo e(__('Toggle navigation')); ?>">
@@ -32,15 +34,15 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo e(url("/about")); ?>">about</a>
+                            <a class="nav-link" href="<?php echo e(url("/")); ?>">О нас</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo e(url("/catalog")); ?>">catalog</a>
+                            <a class="nav-link" href="<?php echo e(url("/catalog")); ?>">Каталог</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo e(url("/howtofindus")); ?>">howtofindus</a>
+                            <a class="nav-link" href="<?php echo e(url("/howtofindus")); ?>">Как нас найти</a>
                         </li>
 
                     </ul>
