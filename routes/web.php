@@ -27,5 +27,5 @@ Route::get('/', [App\Http\Controllers\about::class, 'slider']);
 
 Route::get('/catalog/productpage/{id}',[App\Http\Controllers\productpage::class, 'onelist']);
 
-
+Route::get('/basket',[App\Http\Controllers\basketcontroller::class, 'basket']);
 
