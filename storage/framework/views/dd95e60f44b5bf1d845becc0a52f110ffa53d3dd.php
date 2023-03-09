@@ -17,7 +17,7 @@
         <p class="card-text">
                 <h2>Цена: <?php echo e($obprod->price); ?>рублей.</h2>
             <?php if($obprod->colvo>0): ?>
-                <a href="#" class="btn btn-primary">В корзину</a>
+                <?php if(auth()->guard()->check()): ?><a href="<?php echo e(url('/basket')); ?>/<?php echo e($obprod -> id); ?>" class="btn btn-primary">В корзину</a><?php endif; ?>
             <?php else: ?>
                 <a class="#" href="">НЕТ В НАЛИЧИИ</a>
             <?php endif; ?>

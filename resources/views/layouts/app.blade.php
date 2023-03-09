@@ -44,9 +44,9 @@
                             <a class="nav-link" href="{{url("/howtofindus")}}">Как нас найти</a>
                         </li>
 
-                        <li class="nav-item">
+                   @Auth<li class="nav-item">
                             <a class="nav-link" href="{{url("/basket")}}">Корзина</a>
-                        </li>
+                        </li>@endauth
 
                     </ul>
 

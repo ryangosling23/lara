@@ -41,8 +41,8 @@
                     <div class="card-body">
                         <h5 class="card-title">{{$obprod->name}}</h5>
                     <p class="card-text">Цена: {{$obprod->price}}руб</p>
-                    <a href="{{url('/catalog/productpage')}}/{{$obprod->id}}" class="btn btn-primary">Подробнее</a>
-                    @auth<a href="#" class="btn btn-primary">Купить</a>@endauth
+                      <a href="{{url('/catalog/productpage')}}/{{$obprod->id}}" class="btn btn-primary">Подробнее</a>
+                   @Auth <a href="{{url('/basket')}}/{{$obprod -> id}}" class="btn btn-primary">В корзину</a>@endauth
                     </div>
                 </div>
         </div>

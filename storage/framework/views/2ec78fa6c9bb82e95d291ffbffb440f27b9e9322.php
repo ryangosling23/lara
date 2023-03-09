@@ -39,8 +39,8 @@
                     <div class="card-body">
                         <h5 class="card-title"><?php echo e($obprod->name); ?></h5>
                     <p class="card-text">Цена: <?php echo e($obprod->price); ?>руб</p>
-                    <a href="<?php echo e(url('/catalog/productpage')); ?>/<?php echo e($obprod->id); ?>" class="btn btn-primary">Подробнее</a>
-                    <?php if(auth()->guard()->check()): ?><a href="#" class="btn btn-primary">Купить</a><?php endif; ?>
+                      <a href="<?php echo e(url('/catalog/productpage')); ?>/<?php echo e($obprod->id); ?>" class="btn btn-primary">Подробнее</a>
+                   <?php if(auth()->guard()->check()): ?> <a href="<?php echo e(url('/basket')); ?>/<?php echo e($obprod -> id); ?>" class="btn btn-primary">В корзину</a><?php endif; ?>
                     </div>
                 </div>
         </div>

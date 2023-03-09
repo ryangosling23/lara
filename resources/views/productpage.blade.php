@@ -19,7 +19,7 @@
         <p class="card-text">
                 <h2>Цена: {{$obprod->price}}рублей.</h2>
             @if($obprod->colvo>0)
-                <a href="#" class="btn btn-primary">В корзину</a>
+                @Auth<a href="{{url('/basket')}}/{{$obprod -> id}}" class="btn btn-primary">В корзину</a>@endauth
             @else
                 <a class="#" href="">НЕТ В НАЛИЧИИ</a>
             @endif

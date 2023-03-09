@@ -45,9 +45,9 @@
                             <a class="nav-link" href="<?php echo e(url("/howtofindus")); ?>">Как нас найти</a>
                         </li>
 
-                        <li class="nav-item">
+                   <?php if(auth()->guard()->check()): ?><li class="nav-item">
                             <a class="nav-link" href="<?php echo e(url("/basket")); ?>">Корзина</a>
-                        </li>
+                        </li><?php endif; ?>
 
                     </ul>
 

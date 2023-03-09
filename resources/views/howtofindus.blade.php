@@ -5,7 +5,7 @@
 <div class="container">
 
     <div class="d-flex justify-content-center">
-        <h2>КАК НАС НАЙТИ?!?!?!?!?!</h2>
+        <h2>КАК НАС НАЙТИ</h2>
     </div>
 
     <div class="d-flex justify-content-center">
