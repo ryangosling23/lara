@@ -8,7 +8,7 @@
 <div class="card" style="width: 18rem;">
 
             @foreach($prod as $obprod)
-                <img class="h-100" src="{{$obprod->img}}" alt="">
+                <img class="h-100" src="{{url('/img')}}/{{$obprod->img}}" alt="">
             @endforeach
 
 <div class="card-body">

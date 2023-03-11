@@ -17,4 +17,5 @@ class producty extends Controller
         $cat=\App\Models\category::all();
         return view('catalog', ['prod' =>$prod,'cat'=>$cat]);
     }
+
 }

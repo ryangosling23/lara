@@ -31,10 +31,7 @@ class basketttcontroller extends Controller
       return redirect()->route('bskt');
      }
 
-   //   public function showes($add=0){
-   //    $a=DB::table('catalogs')->get();
-   //    return view('catalog',["a"=>$a, "add"=>$add])
-   //   }
+
 
 }
 

@@ -1,21 +1,21 @@
-@extends('layouts.app')
 
-@section('content')
+
+<?php $__env->startSection('content'); ?>
 
 <div class="container">
    
         <div class="d-flex justify-content-center mb-3"><h2>КОРЗИНА</h2></div>
             <div class="row">  
-                @foreach ($p as $z)
+                <?php $__currentLoopData = $p; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $z): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <div class="col-md-3 pb-5" >
                     <div class="card mb-3 h-100" style="width: 18rem;">
 
-                    <img src="{{url('/img')}}/{{$z->products->img}}" class="card-img-top h-100" alt="...">
+                    <img src="<?php echo e(url('/img')); ?>/<?php echo e($z->products->img); ?>" class="card-img-top h-100" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Название: {{ $z->products->name}}</h5>
-                            <p class="card-text">Цена: {{ $z->products->price}}</p>
+                        <h5 class="card-title">Название: <?php echo e($z->products->name); ?></h5>
+                            <p class="card-text">Цена: <?php echo e($z->products->price); ?></p>
                         <button type="submit" class="btn btn-primary">
-                            <a href="/public/basket/{{$z->id}}/delete" class="btn btn-primary">
+                            <a href="/public/basket/<?php echo e($z->id); ?>/delete" class="btn btn-primary">
                                 удалить
                                 <i class="bi bi-trash3"></i>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
@@ -29,7 +29,7 @@
                             </div>
                         </div>
                     </div>
-                @endforeach 
+                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?> 
             
             </div>
 
@@ -44,4 +44,6 @@
 
 
 
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /srv/users/praeuivg/dudzpez-m1/resources/views/basket.blade.php ENDPATH**/ ?>

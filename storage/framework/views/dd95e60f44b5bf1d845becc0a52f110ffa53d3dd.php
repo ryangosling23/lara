@@ -6,7 +6,7 @@
 <div class="card" style="width: 18rem;">
 
             <?php $__currentLoopData = $prod; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $obprod): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                <img class="h-100" src="<?php echo e($obprod->img); ?>" alt="">
+                <img class="h-100" src="<?php echo e(url('/img')); ?>/<?php echo e($obprod->img); ?>" alt="">
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 
 <div class="card-body">

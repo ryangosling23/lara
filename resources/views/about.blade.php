@@ -20,7 +20,7 @@
                     @else
                     <div class="carousel-item">
                         @endif
-                        <img src="{{ $pp->img }}" class="d-block mx-auto carousel-img" alt="tovar">
+                        <img src="{{url('/img')}}/{{ $pp->img }}" class="d-block mx-auto carousel-img" alt="tovar">
                         <div class="carousel-caption d-none d-md-block">
                             <h1 class="name_tovar">{{ $pp->name }}</h1>
                         </div>

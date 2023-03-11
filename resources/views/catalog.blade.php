@@ -37,7 +37,7 @@
         @foreach ($prod as $obprod)
         <div class="col-md-3 pb-5">
                 <div class="card h-100" style="width: 18rem;">
-                    <img class="card-img-top h-100" src="{{$obprod->img}}" src="..." alt="cardimg">
+                    <img class="card-img-top h-100" src="{{url('/img')}}/{{ $obprod->img }}" src="..." alt="cardimg">
                     <div class="card-body">
                         <h5 class="card-title">{{$obprod->name}}</h5>
                     <p class="card-text">Цена: {{$obprod->price}}руб</p>
