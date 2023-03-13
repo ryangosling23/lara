@@ -1,3 +1,4 @@
+
 @extends('layouts.app')
 
 @section('content')
@@ -42,10 +43,9 @@
                         <div class="text-center">
                             <h1>{{ $c->name }}</h1><!--вывод имени товара с базы-->
                         </div>
-                            <a role="button" href="{{url('/admin/category/delete/')}}/{{$p->id}}" class="btn btn-warning mx-1 mt-2">
+                            <a role="button" href="{{url('/admin/category/delete/')}}/{{ $c->id }}" class="btn btn-warning mx-1 mt-2">
                             Удалить
                             </a> <!--удалить товар-->
-                        
                     </div>
                 </div>
             </div>

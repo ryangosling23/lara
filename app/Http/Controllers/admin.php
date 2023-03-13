@@ -46,7 +46,6 @@ class Admin extends Controller
     public function makecategory(Request $request)
     {
         category::create([ //внести в поля базы
-
             'name' => $request->input('name')
         ]);
         return redirect(route('admin')); //возвращает на страницу админа

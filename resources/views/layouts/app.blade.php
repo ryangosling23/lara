@@ -78,7 +78,7 @@
 
 
 
-                        @Auth
+                        @if(@Auth::user()->name == "admin")
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url('/admin') }}">
                             <i class="bi bi-person"></i>
@@ -88,7 +88,7 @@
                             Админка
                             </a>
                         </li>
-                        @endauth
+                        @endif
 
 
                     </ul>
